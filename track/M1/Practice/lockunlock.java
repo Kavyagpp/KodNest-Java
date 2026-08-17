@@ -47,7 +47,7 @@ class lockunlock {
         FaceId fi = new FaceId();
         Phone ph = new Phone();
         ph.lock();
-
+    
         ph.unlock(pn);
         ph.unlock(ps);
         ph.unlock(pt);
