@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class FrequencyOfString {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+
+        int[] count = new int[256];
+
+        for (char ch : str.toCharArray()) {
+            count[ch]++;
+        }
+
+        char answer = str.charAt(0);
+        int max = 0;
+
+        for (char ch : str.toCharArray()) {
+            if (count[ch] > max) {
+                max = count[ch];
+                answer = ch;
+            }
+        }
+
+        System.out.println(answer);
+    }
+}
