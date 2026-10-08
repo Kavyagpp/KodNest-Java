@@ -36,12 +36,12 @@ class PythonDeveloper extends Developer {
     }
 }
 
-public class Main4 {
+public class Upcasting {
 
     public static void main(String[] args) {
-        JavaDeveloper jd = new JavaDeveloper();
+        JavaDeveloper jd = new JavaDeveloper();//upcasting
         accessMethod(jd);
-        PythonDeveloper pd = new PythonDeveloper();
+        PythonDeveloper pd = new PythonDeveloper();//upcasting
         accessMethod(pd);
     }
 
