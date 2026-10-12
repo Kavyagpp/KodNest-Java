@@ -41,5 +41,6 @@ public class Downcasting {
         p.display1();
         p.display2();
         ((Child1) (p)).display3();//downcasting
+
     }
 }
