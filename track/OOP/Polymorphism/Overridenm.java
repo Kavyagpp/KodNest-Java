@@ -18,6 +18,11 @@ class Student {
             return false;
         }
     }
+
+    void display() {
+        System.out.println(roll);
+        System.out.println(name);
+    }
 }
 
 class Overridenm {
@@ -26,6 +31,11 @@ class Overridenm {
         Student s1 = new Student(11, "yash");
         Student s2 = new Student(12, "kavya");
         Student s3 = new Student(11, "yash");
+
+        s1.display();
+        s2.display();
+        s3.display();
+
         System.out.println(s1.equals(s2));
         System.out.println(s1.equals(s3));
     }
